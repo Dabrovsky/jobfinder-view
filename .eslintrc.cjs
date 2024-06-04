@@ -17,6 +17,7 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
-    "quotes": ["error", "double"]
+    "quotes": ["error", "double"],
+    "object-curly-spacing": ["error", "always"],
   },
 }

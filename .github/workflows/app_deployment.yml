@@ -28,3 +28,6 @@ jobs:
 
     - name: Check code patterns
       run: npm run lint
+
+    - name: Run tests
+      run: npm run test
