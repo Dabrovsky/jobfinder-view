@@ -1,4 +1,4 @@
-import { httpClient } from "./http_client";
+import { httpClient } from "@/api/http_client";
 
 class ApiClient {
   get(endpoint, queryParams = {}) {

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { vi, describe, it, expect, beforeEach } from "vitest";
-import { httpClient } from "../../api/http_client";
+import { httpClient } from "@/api/http_client";
 
 vi.mock("axios");
 

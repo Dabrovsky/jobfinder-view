@@ -1,5 +1,5 @@
-import ApiClient from "./api_client";
-import JobSerializer from "./serializers/job_serializer";
+import ApiClient from "@/api/api_client";
+import JobSerializer from "@/api/serializers/job_serializer";
 
 class ApiProvider {
   constructor() {

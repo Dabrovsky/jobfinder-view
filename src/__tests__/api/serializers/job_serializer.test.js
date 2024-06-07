@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from "vitest";
-import JobSerializer from "../../../api/serializers/job_serializer";
+import JobSerializer from "@/api/serializers/job_serializer";
 
 describe("JobSerializer", () => {
   let data, expected_data;
