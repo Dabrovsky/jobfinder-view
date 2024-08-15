@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.rmsc.selecteblor {
+  --rmsc-radius: 0;
+}
+
+.rmsc.selecteblor .dropdown-heading {
+  @apply h-11 cursor-pointer text-sm;
+}
+
+.rmsc.selecteblor .dropdown-container {
+  @apply border-2 border-transparent;
+}
+
+.rmsc.selecteblor .dropdown-container:focus-within {
+  border-color: #4285f4;
+}
+
+.rmsc.selecteblor .dropdown-content {
+  @apply pt-0 text-sm;
+}
+
+.rmsc.selecteblor .dropdown-content .panel-content {
+  /* @apply border-2 border-t-0 border-blue-500; */
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0; */
+  /* box-shadow: var(--rmsc-main) 0 0 0 1px;
+    border-color: var(--rmsc-main); */
+}
+
+form .input {
+  @apply w-full;
+  outline: 0;
+  border-width: 2px;
+  border-color: transparent;
+  transition: all .2s ease;
+}
+
+form .input:focus-visible {
+  box-shadow: #4285f4 0 0 0 1px;
+  border-color: #4285f4;
+}
+
+form .input-container svg {
+  @apply text-gray-500;
+}
+
+form .form-button {
+  border: 2px solid transparent;
+}
+
+form .form-button:focus {
+  box-shadow: #4285f4 0 0 0 1px;
+  border-color: #4285f4;
+}
