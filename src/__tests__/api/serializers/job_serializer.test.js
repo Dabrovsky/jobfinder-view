@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "vitest";
+import { describe, test, expect, beforeEach } from "vitest";
 import JobSerializer from "@/api/serializers/job_serializer";
 
 describe("JobSerializer", () => {
@@ -34,13 +34,13 @@ describe("JobSerializer", () => {
     }
   });
 
-  it("should serialize the data with the given attributes", () => {
+  test("should serialize the data with the given attributes", () => {
     const serialized_data = JobSerializer(data);
 
     expect(serialized_data).toEqual(expected_data);
   });
 
-  it("should serialize only the whitelisted attributes", () => {
+  test("should serialize only the whitelisted attributes", () => {
     const extra_data = { ...data, ...{ extra: "Extra field" } };
     const serialized_data = JobSerializer(extra_data);
 
