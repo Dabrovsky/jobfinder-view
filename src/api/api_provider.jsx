@@ -1,5 +1,4 @@
 import ApiClient from "@/api/api_client";
-import JobSerializer from "@/api/serializers/job_serializer";
 
 class ApiProvider {
   constructor() {
@@ -8,10 +7,9 @@ class ApiProvider {
   }
 
   async getJobs(params = {}) {
-    const response = await this.api_client.get(`/api/${this.api_version}/jobs`, params);
-    const serialized = response.data.map(data => JobSerializer(data));
+    const response = await this.api_client.get(`/api/${this.api_version}/job_offers`, params);
 
-    return serialized;
+    return response;
   }
 }
 
