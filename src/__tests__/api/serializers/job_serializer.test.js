@@ -7,28 +7,29 @@ describe("JobSerializer", () => {
   beforeEach(() => {
     data = {
       attributes: {
+        external_slug: "slug",
+        external_source: "source",
         title: "Software Engineer",
-        image: "avatar.jpg",
+        company_logo: "avatar.jpg",
         company_name: "Tech Inc.",
         category: "Backend",
-        seniority: "Mid",
-        salary: {
-          min: 10000.0,
-          max: 20000.0,
-          currency: "USD"
-        },
+        seniority_level: "Mid",
+        salary_range: "10,000 - 20,000",
+        salary_currency: "USD",
         tags: ["tag"],
         remote: true
       }
     };
 
     expected_data = {
+      external_slug: "slug",
+      external_source: "source",
       title: "Software Engineer",
-      image: "avatar.jpg",
+      company_logo: "avatar.jpg",
       company_name: "Tech Inc.",
       category: "Backend",
-      seniority: "Mid",
-      salary: "USD 10,000 - 20,000",
+      seniority_level: "Mid",
+      salary: "10,000 - 20,000 USD",
       tags: ["tag"],
       remote: true
     }
