@@ -41,6 +41,10 @@ html, body {
     border-color: var(--rmsc-main); */
 }
 
+.rmsc .gray {
+  @apply text-gray-400;
+}
+
 form .input {
   @apply w-full;
   outline: 0;
